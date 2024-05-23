@@ -185,3 +185,9 @@ Pour protéger l'authenticité et la confidentialité d'un partage SMB, on peut 
 <p align="center">
     <img src="./TLS.png" alt="TLS" style="width: 800px;" />
 </p>
+
+## Bonus 2 : Reconstituer un fichier qui a transité sur le réseau à l'aide de Wireshark
+
+<p align="center">
+    <img src="./B2.png" alt="B2" style="width: 800px;" />
+</p>
