@@ -121,37 +121,31 @@ Une PKI (Public Key Infrastructure) est un ensemble de politiques, procédures e
     <img src="./Handshake.png" alt="Handshake" style="width: 800px;" />
 </p>
 
-## 16. Déchiffrer le trafic TLS avec votre certificat et/ou votre clé de session
-
-<p align="center">
-    <img src="./TLS.png" alt="TLS" style="width: 800px;" />
-</p>
-
-## 17. Qu’est-ce qu’une autorité de certification (AC) racine ? Qu'est qu'une AC intermediaire ?
+## 16. Qu’est-ce qu’une autorité de certification (AC) racine ? Qu'est qu'une AC intermediaire ?
 
 Une Autorité de Certification (AC) racine est une autorité de certification de premier niveau dans une infrastructure à clés publiques (PKI). Elle émet des certificats de confiance pour d'autres autorités de certification, garantissant ainsi la confiance dans les certificats qu'elles émettent. Les certificats racines sont souvent préinstallés dans les logiciels et les systèmes d'exploitation pour établir une chaîne de confiance.
 
 Une Autorité de Certification intermédiaire (AC intermédiaire) est une autorité de certification qui se situe entre l'AC racine et les entités finales, telles que les serveurs Web ou les clients. Les AC intermédiaires émettent des certificats de serveur et de client au nom de l'AC racine, étendant ainsi la portée de la PKI tout en maintenant la confiance dans les certificats émis. Les certificats intermédiaires sont souvent utilisés pour des raisons de sécurité et de gestion, permettant à l'AC racine de rester hors ligne pour une protection accrue.
 
-## 18. Connectez-vous sur https://taisen.fr et affichez la chaine de confiance du certificat
+## 17. Connectez-vous sur https://taisen.fr et affichez la chaine de confiance du certificat
 
 <p align="center">
     <img src="./Certificat.png" alt="Certificat" style="width: 500px;" />
 </p>
 
-## 19. Capturer une authentification Kerberos (mettre en place le service si nécessaire)
+## 18. Capturer une authentification Kerberos (mettre en place le service si nécessaire)
 
 <p align="center">
     <img src="./Kerberos.png" alt="Kerberos" style="width: 800px;" />
 </p>
 
-## 20. Capturer une authentification RDP (mettre en place le service si nécessaire)
+## 19. Capturer une authentification RDP (mettre en place le service si nécessaire)
 
 <p align="center">
     <img src="./RDP.png" alt="RDP" style="width: 800px;" />
 </p>
 
-## 21. Quelles sont les attaques connues sur NetLM ?
+## 20. Quelles sont les attaques connues sur NetLM ?
 
 Les attaques connues sur NetLM sont les suivantes : 
 
@@ -160,28 +154,34 @@ Les attaques connues sur NetLM sont les suivantes :
 - Attaques par force brute : l'attaquant essaie de deviner le mot de passe en essayant différentes combinaisons de caractères jusqu'à ce qu'il trouve le bon hachage.
 - Attaques d'usurpation de session : les attaquants peuvent capturer les hachages de mots de passe NetLM et les utiliser pour s'authentifier en tant qu'utilisateur légitime, ce qui leur permet d'usurper la session de l'utilisateur et d'accéder à des ressources sensibles.
 
-## 22. Capturer une authentification WinRM (Vous pouvez utiliser EvilWinRM si nécessaire côté client.)
+## 21. Capturer une authentification WinRM (Vous pouvez utiliser EvilWinRM si nécessaire côté client.)
 
 <p align="center">
     <img src="./WINRM.png" alt="WINRM" style="width: 800px;" />
 </p>
 
-## 23. Capturer une authentification SSH ou SFTP (mettre en place le service si nécessaire)
+## 22. Capturer une authentification SSH ou SFTP (mettre en place le service si nécessaire)
 
 <p align="center">
     <img src="./SSH.png" alt="SSH" style="width: 800px;" />
 </p>
 
-## 24. Intercepter un fichier au travers du protocole SMB
+## 23. Intercepter un fichier au travers du protocole SMB
 
 <p align="center">
     <img src="./SMB.png" alt="SMB" style="width: 800px;" />
 </p>
 
-## 25. Comment proteger l'authenticité et la confidentialité d'un partage SMB ?
+## 24. Comment proteger l'authenticité et la confidentialité d'un partage SMB ?
 
 Pour protéger l'authenticité et la confidentialité d'un partage SMB, on peut :
 
 - Utiliser des connexions sécurisées : configurer les clients et les serveurs SMB pour qu'ils utilisent des connexions sécurisées telles que SMB sur VPN (Virtual Private Network) ou SMB sur SSL/TLS.
 - Mettre en place des politiques d'accès strictes : autorisations d'accès appropriées pour contrôler qui peut accéder aux partages SMB et quelles actions peuvent être effectuées.
 - Surveiller et auditer le trafic SMB : surveillance régulière du trafic SMB pour détecter les activités suspectes et les tentatives d'attaque.
+
+## Bonus 1 :  Déchiffrer le trafic TLS avec votre certificat et/ou votre clé de session
+
+<p align="center">
+    <img src="./TLS.png" alt="TLS" style="width: 800px;" />
+</p>
