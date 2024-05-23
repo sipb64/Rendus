@@ -101,6 +101,11 @@ Pour mettre en place la confidentialité et l'authenticité pour HTTP, on peut u
 
 Une PKI (Public Key Infrastructure) est un ensemble de politiques, procédures et technologies utilisées pour gérer les certificats numériques et les clés publiques/privées. Elle fournit un cadre sécurisé pour la distribution et la gestion des certificats numériques, ainsi que pour la vérification de l'identité des parties impliquées dans les transactions en ligne. La PKI permet donc d'assurer l'authenticité, l'intégrité et la confidentialité des données échangées sur les réseaux informatiques.
 
+## 13. Capturer un mot de passe HTTP ou FTP ou Telnet (mettre en place les services si nécessaire)
+
+<p align="center">
+    <img src="./FTP.png" alt="FTP" style="width: 800px;" />
+</p>
 
 ## 14. Comment mettre en place la confidentialité pour ce service ?
 
@@ -136,11 +141,15 @@ Une Autorité de Certification intermédiaire (AC intermédiaire) est une autori
 
 ## 19. Capturer une authentification Kerberos (mettre en place le service si nécessaire)
 
-
+<p align="center">
+    <img src="./Kerberos.png" alt="Kerberos" style="width: 800px;" />
+</p>
 
 ## 20. Capturer une authentification RDP (mettre en place le service si nécessaire)
 
-
+<p align="center">
+    <img src="./RDP.png" alt="RDP" style="width: 800px;" />
+</p>
 
 ## 21. Quelles sont les attaques connues sur NetLM ?
 
@@ -153,15 +162,21 @@ Les attaques connues sur NetLM sont les suivantes :
 
 ## 22. Capturer une authentification WinRM (Vous pouvez utiliser EvilWinRM si nécessaire côté client.)
 
-
+<p align="center">
+    <img src="./WINRM.png" alt="WINRM" style="width: 800px;" />
+</p>
 
 ## 23. Capturer une authentification SSH ou SFTP (mettre en place le service si nécessaire)
 
-
+<p align="center">
+    <img src="./SSH.png" alt="SSH" style="width: 800px;" />
+</p>
 
 ## 24. Intercepter un fichier au travers du protocole SMB
 
-
+<p align="center">
+    <img src="./SMB.png" alt="SMB" style="width: 800px;" />
+</p>
 
 ## 25. Comment proteger l'authenticité et la confidentialité d'un partage SMB ?
 
