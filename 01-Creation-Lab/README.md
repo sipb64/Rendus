@@ -22,7 +22,7 @@ Il faut également observer le statut du service web, pour ce faire on utilise l
 
 # Connexions SSH et WinRM
 
-Afin de prendre la main sur notre Debian et notre client Windows, on installe les services SSH et WinRM. SSH a été installé de base lors de l'installation de notre Debian et WinRM grâce à `winrim quickconfig` qui est une méthode un peu plus historique comparée à `Enable-PSRemoting` : 
+Afin de prendre la main sur notre Debian et notre client Windows, on installe les services SSH et WinRM. SSH a été installé de base lors de l'installation de notre Debian et WinRM grâce à `winrm quickconfig` qui est une méthode un peu plus historique comparée à `Enable-PSRemoting` : 
 
 <p align="center">
     <img src="./SSH.png" alt="SSH" style="width: 800px;" />
