@@ -44,9 +44,9 @@ make
 
 # Vérifier la configuration
 ```bash
-ls /usr/local/bin/snort
-sinon 
-ls /root/snort3/build/src/snort
+
+si root : ls /root/snort3/build/src/snort
+si pas root : ls /usr/local/bin/snort 
 ```
 
 # Fin
