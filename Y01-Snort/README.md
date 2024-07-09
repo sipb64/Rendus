@@ -54,3 +54,6 @@ ls /root/snort3/build/src/snort
 sudo make install	
 snort -V
 ```
+<p align="center">
+    <img src="SNORT_OK.png" alt="SNORT_OK" style="width: 800px;" />
+</p>
