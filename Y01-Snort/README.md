@@ -27,6 +27,7 @@ cd libdaq
 ./configure
 make
 sudo make install
+ldconfig
 ```
 
 # Définir les chemins des bibliothèques
