@@ -26,7 +26,7 @@ cd libdaq
 ./bootstrap
 ./configure
 make
-sudo make install
+make install
 ```
 
 # Optionnel – Définir les chemins des bibliothèques
@@ -51,7 +51,7 @@ ls /root/snort3/build/src/snort
 
 # Fin
 ```bash
-sudo make install	
+make install	
 snort -V
 ```
 <p align="center">
