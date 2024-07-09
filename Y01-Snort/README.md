@@ -15,7 +15,7 @@ apt install -y build-essential autotools-dev libpcre3 libpcre3-dev libpcap-dev l
 ```bash
 git clone https://github.com/snort3/snort3.git
 cd /root/snort3
-./configure_cmake.sh
+mkdir build
 ```
 
 # Installation et configuration de Libdaq
@@ -26,16 +26,16 @@ cd libdaq
 ./bootstrap
 ./configure
 make
-make install
+sudo make install
 ```
 
-# Optionnel – Définir les chemins des bibliothèques
+# Définir les chemins des bibliothèques
 ```bash
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH 
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH 
 ```
 
-# Configuration finale
+# Finalisation de l'installation de Snort
 ```bash
 cd /root/snort3/build
 cmake ..
@@ -51,7 +51,7 @@ ls /root/snort3/build/src/snort
 
 # Fin
 ```bash
-make install	
+sudo make install	
 snort -V
 ```
 <p align="center">
