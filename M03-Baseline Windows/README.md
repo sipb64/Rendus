@@ -27,6 +27,20 @@ https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/dev
     <img src="./PolicyAnalyzer1.png" alt="PolicyAnalyzer1" style="width: 800px;" />
 </p>
 
+<p align="center">
+    <img src="./Script.png" alt="Script" style="width: 800px;" />
+</p>
+
+<p align="center">
+    <img src="./PolicyAnalyzer2.png" alt="PolicyAnalyzer2" style="width: 800px;" />
+</p>
+
+## Captures des logs avec échec d'authentification
+
+<p align="center">
+    <img src="./Rapport.png" alt="Rapport" style="width: 800px;" />
+</p>
+
 ## Activer le chiffrement de surface (bitlocker recommandé)
 
 <p align="center">
