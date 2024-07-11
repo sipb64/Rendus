@@ -1,7 +1,4 @@
-### Génération de la clef
-
-```powershell
-# Générer une clé AES-256
+﻿# Générer une clé AES-256
 $key = [System.Security.Cryptography.Aes]::Create()
 $key.KeySize = 256
 $key.GenerateKey()
@@ -16,6 +13,5 @@ Write-Output "Clé AES-256 : $keyBase64"
 Write-Output "IV : $ivBase64"
 
 # Sauvegarder la clé et l'IV dans des fichiers
-$keyBase64 | Out-File -FilePath "C:\aes_key.txt"
-$ivBase64 | Out-File -FilePath "C:\aes_iv.txt"
-```
+$keyBase64 | Out-File -FilePath "C:\Users\Nicolas\Desktop\VirtualBox-Simplon\Bazar\aes_key.txt"
+$ivBase64 | Out-File -FilePath "C:\Users\Nicolas\Desktop\VirtualBox-Simplon\Bazar\aes_iv.txt"
