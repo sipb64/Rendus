@@ -108,3 +108,11 @@ alert_full =
 ```bash
 snort -c snort3/lua/snort.lua -R snort3/rules/local.rules -i ens18 -A alert_fast -l /var/log/snort
 ```
+
+<p align="center">
+    <img src="SNORT_PACKETS.png" alt="SNORT_PACKETS" style="width: 400px;" />
+</p>
+
+<p align="center">
+    <img src="SNORT_ICMP.png" alt="SNORT_ICMP" style="width: 400px;" />
+</p>
