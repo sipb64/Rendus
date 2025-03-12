@@ -310,3 +310,119 @@ ls -l log
 cat log/access.log # Vérifier les requêtes Apache
 cat log/error.log # Vérifier les erreurs Apache
 ```
+
+# Docker Compose
+
+### Installation
+
+Création du répertoire qui contiendra les binaires :
+
+```bash
+sudo mkdir -p /usr/local/lib/docker/cli-plugins/
+```
+
+Télécharger les binaires :
+
+```bash
+sudo curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/lib/docker/cli-plugins/docker-compose
+```
+
+Rendre Docker Compose exécutable :
+
+```bash
+sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+```
+
+### Vérifier l'installation
+
+```bash
+docker compose version
+```
+
+<p align="center">
+    <img src="docker_compose.png" alt="docker_compose_" style="width: 400px;" />
+</p>
+
+## Exécution à l'aide de docker compose
+
+Créer l'espace de travail
+
+```bash
+mkdir ecommerce
+cd ecommerce/
+mkdir web
+cd web/
+```
+
+```bash
+nano dockerfile
+
+# Utiliser l'image officielle d'Apache
+FROM httpd:latest
+
+# Copier le fichier index.html dans le répertoire de configuration d'Apache
+COPY index.html /usr/local/apache2/htdocs/
+```
+
+```bash
+nano index.html
+...
+```
+
+### Fichier docker-compose.yaml
+
+```bash
+cd ..
+```
+
+```bash 
+version: '3.3'
+services:
+  web:
+    build: ./web
+    networks:
+      - ecommerce
+    ports:
+      - '80:80'
+  database:
+    image: mysql:latest
+    networks:
+      - ecommerce
+    environment:
+      - MYSQL_DATABASE=ecommerce
+      - MYSQL_USERNAME=root
+      - MYSQL_ROOT_PASSWORD=helloword
+    
+networks:
+  ecommerce:
+```
+
+### Démarrage de la stack
+
+```bash
+docker compose up -d
+```
+
+<p align="center">
+    <img src="ecommerce.png" alt="ecommerce" style="width: 400px;" />
+</p>
+
+### Commandes utiles
+
+Vérifier les logs :
+
+```bash
+docker compose logs -f
+```
+
+Arrêter et supprimer les conteneurs ainsi que leurs volumes :
+
+```bash
+docker compose down -v
+```
+
+Accéder au conteneur Wordpress en mode interactif :
+
+```bash
+docker exect -i CONTENEUR_WP bash
+```
